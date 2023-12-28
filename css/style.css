@@ -1,0 +1,297 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  font-weight: 300;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  color: #2B2A29;
+  overflow: inherit !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Lack";
+  src: url("../fonts/Lack-Regular.woff2") format("woff2"), url("../fonts/Lack-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.uk {
+  margin: 0;
+  padding: 25px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+@media (min-width: 1024px) {
+  .uk {
+    padding: 90px 0;
+  }
+}
+.uk__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1533px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.uk__logo {
+  width: 100%;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .uk__logo {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .uk__logo {
+    margin-bottom: 212px;
+  }
+}
+.uk__logo img {
+  display: block;
+  width: 100%;
+  max-width: 684px;
+  margin: 0 auto;
+}
+.uk__contacts {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media (min-width: 1024px) {
+  .uk__contacts {
+    max-width: 715px;
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+  }
+}
+.uk__contacts h2 {
+  text-align: center;
+  margin: 0 0 1em;
+  padding: 0;
+  color: #393939;
+  font-family: "Lack";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 44px */
+  letter-spacing: 0.4px;
+}
+@media (min-width: 768px) {
+  .uk__contacts h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .uk__contacts h2 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+.uk__contacts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7em;
+  color: #393939;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%; /* 33px */
+}
+@media (min-width: 768px) {
+  .uk__contacts ul {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .uk__contacts ul {
+    gap: 21px;
+  }
+}
+.uk__contacts li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.uk__contacts li a {
+  color: inherit !important;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6em;
+}
+.uk__contacts li a:hover, .uk__contacts li a:focus {
+  color: #09A16B !important;
+}
+.uk__contacts li a:hover .icon__color-element, .uk__contacts li a:focus .icon__color-element {
+  fill: #09A16B;
+}
+.uk__contacts li a .icon {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.uk__contacts li a .icon__color-element {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: #575757;
+}
+.uk__apps {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media (min-width: 1024px) {
+  .uk__apps {
+    width: auto;
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+  }
+}
+.uk__apps ul {
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.12em;
+}
+@media (min-width: 768px) {
+  .uk__apps ul {
+    font-size: 24px;
+  }
+}
+.uk__apps li a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit !important;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.uk__apps li a:hover, .uk__apps li a:focus {
+  color: #09A16B !important;
+}
+.uk__apps li a:hover .icon__color-element, .uk__apps li a:focus .icon__color-element {
+  fill: #09A16B;
+}
+.uk__apps li a span {
+  display: inline-block;
+  font-family: "Lack";
+  position: absolute;
+  bottom: -0.58em;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translateX(-50%) translateY(100%);
+          transform: translateX(-50%) translateY(100%);
+  text-align: center;
+}
+.uk__apps li a .icon {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.uk__apps li a .icon__color-element {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: #575757;
+}
